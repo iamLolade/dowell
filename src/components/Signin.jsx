@@ -33,6 +33,9 @@ const Signin = () => {
                         name='password'
                     />
                 </div>
+                <div className="forgot">
+                    <p className="desc"><span onClick={() => navigate('/forgetpassword')}>Forgot password?</span></p>
+                </div>
                 <button>
                     Sign in
                 </button>

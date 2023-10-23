@@ -14,16 +14,59 @@ html, body, main {
 }
 
 
-nav {
-  padding: 2em 4em;
-  background: rgb(44, 101, 222);
+.sidebar {
   display: flex;
-  color: #fff;
+  flex-direction: column;
+  min-height: 100vh;
+  min-width: 13vw;
+  padding-block: .5em;
+  border-right: 1px solid #eee;
+}
+
+.main {
+  width: 100vw;
+}
+
+.urlContainer {
+  margin-block: 1.5em;
+  padding-inline: 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  overflow-y: scroll;
+}
+
+.url {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: .5em;
+  font-weight: 700;
+  color: #423b3b;
+  margin-block: 1em;
+  cursor: pointer;
+}
+.url:hover {
+  color: #000 !important;
+}
+
+.home {
+  display: flex;
 }
 
 .header {
+  padding: 2em 4em;
   display: flex;
-  gap: 4em;
+  align-content: center;
+  justify-content: space-between;
+  background: #fcfcfc;
+  color: #423b3b;
+}
+
+.avatar {
+  padding: 0;
+  margin: 0;
+  height: 50px;
 }
 
 .signinComponent {
@@ -32,6 +75,19 @@ nav {
   align-items: center;
   height: 100vh;
   width: 100%;
+}
+
+.boxes {
+  display: flex;
+  justify-content: space-between;
+}
+
+.box {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 4em;
+  margin-block: 1.5em;
+  width: 25vw;
+  border-radius: 8px;
 }
 
 
@@ -97,4 +153,9 @@ button {
 
 span {
   cursor: pointer;
+}
+
+.forgot > p {
+  display: flex;
+  justify-self: flex-end;
 }

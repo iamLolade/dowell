@@ -16,7 +16,7 @@ const Signup = () => {
                     <img src={logo} alt="logo" />
                 </div>
                 <h1 className="title">Welcome to Dowell Wallet</h1>
-                <p className="desc">Sign in by entering information below</p>
+                <p className="desc">Sign up by entering information below</p>
                 <div className="form-group">
                     <label>First Name</label>
                     <input 
